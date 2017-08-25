@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Special+Elite|Nunito|Work+Sans|Montserrat');
+
+
+@media (max-width: 400px){
+	.maincontent h2{
+		transition: all 1s ease;
+		font-size: 1.5em;
+		text-align: center;
+	}
+}
+
+.img-responsive{
+	margin: 10px auto 0px auto;
+}
+
+.body{
+	min-width: 400px;
+}
+
+.navbar{
+	background-color: black;
+	margin-bottom: 0px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.rec{
+	animation-duration: 5s;
+	animation-name: headeranimate;
+	animation-iteration-count: infinite;
+}
+
+.form-group textarea{
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.btn{
+	animation-duration: 5s;
+	animation-name: headeranimate;
+	animation-iteration-count: infinite;
+	font-family: "Montserrat";
+	border-radius: 0;
+	border: 0px;
+}
+
+.rec p{
+	font-family: "Montserrat";
+	font-size: 1.5em;
+	color: white;
+
+}
+.form-control:focus {
+  animation-duration: 5s;
+  animation-name: bordercolor;
+  animation-iteration-count: infinite;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.img-overlay{
+	position: relative;
+	max-width: 300px;
+	margin: 0 auto -20px auto;
+	bottom: 50px;
+}
+
+.navbar-header a{
+	font-family: "Montserrat";
+	animation-duration: 5s;
+	animation-name: colorchange;
+	animation-iteration-count: infinite;
+}
+.navbar-right a:hover{
+	color: white;
+	animation-duration: 2s;
+	animation-name: colorchange2;
+	animation-iteration-count: infinite;
+}
+
+.navbar-default .navbar-nav > li > a {
+	transition: color 0.5s ease;
+	font-family: "Montserrat";
+    color: lightgrey;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	transition: color 0.3s ease;
+	font-family: "Montserrat";
+    color: #FFFFFF;
+}
+
+
+.bg{
+	min-height: 83vh;
+	background-image: url("../images/bganimate2.gif");
+	background-size: 300px 300px;
+	background-repeat: repeat;
+}
+
+.main{
+	margin-top: 40px;
+}
+
+.footer{
+	padding: 40px 0 40px 0;
+	text-align: center;
+	background-color: black;
+	font-family: "Montserrat";
+}
+
+.footer > .container > span{
+	color: white;
+}
+
+.maincontent{
+	border-radius: 0px;
+	border: 10px solid black;
+	padding: 20px 20px 20px 20px;
+	animation-duration: 5s;
+	animation-name: borderchange;
+	animation-iteration-count: infinite;
+}
+
+.maincontent h2{
+	font-family: "Montserrat";
+	font-weight: bolder;
+	animation-duration: 5s;
+	animation-name: colorchange2;
+	animation-iteration-count: infinite;
+	transition: font 0.3s ease;
+}
+
+h2.cnm{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.profpic{
+	padding: 20px 20px 20px 20px;
+	border: 0px;
+}
+
+.article{
+	padding: 20px 20px 20px 20px;
+	font-family: "Crimson Text";
+	font-size: 1.2em;
+	color: grey;
+}
+
+.cnmi{
+	margin: 5px 5px 5px 5px;
+}
+
+@keyframes headeranimate{
+	0%{ background-color: #9BC995; }
+	20%{ background-color: #98B9AB; }
+	40%{ background-color: #5171A5; }
+	60%{ background-color: #3F3047; }
+	80%{ background-color: #FF5154; }
+	100%{ background-color: #91CB3E; }
+}
+
+@keyframes borderchange{
+	0%{ border: 5px solid #9BC995; }
+	20%{ border: 5px solid #98B9AB; }
+	40%{ border: 5px solid #5171A5; }
+	60%{ border: 5px solid #3F3047; }
+	80%{ border: 5px solid #FF5154; }
+	100%{ border: 5px solid #91CB3E; }
+}
+
+@keyframes bordercolor{
+	0%{ border-color: #9BC995; box-shadow: inset 0 1px 1px #9BC995, 
+		0 0 8px #9BC995;}
+	20%{ border-color: #98B9AB; box-shadow: inset 0 1px 1px #98B9AB, 
+		0 0 8px #98B9AB;}
+	40%{ border-color: #5171A5; box-shadow: inset 0 1px 1px #5171A5, 
+		0 0 8px #5171A5;}
+	60%{ border-color: #3F3047; box-shadow: inset 0 1px 1px #3F3047, 
+		0 0 8px #3F3047;}
+	80%{ border-color: #FF5154; box-shadow: inset 0 1px 1px #FF5154, 
+		0 0 8px #FF5154;}
+	100%{ border-color: #91CB3E; box-shadow: inset 0 1px 1px #91CB3E, 
+		0 0 8px #91CB3E;}
+}
+
+@keyframes colorchange{
+	0%{ color: #91A6FF; }
+	20%{ color: #FF88DC; }
+	40%{ color: #FAFF7F; }
+	60%{ color: #79B23E; }
+	80%{ color: #FF5154; }
+	100%{ color: #4ECDC4; }
+}
+
+@keyframes colorchange2{
+	0%{ color: #9BC995; }
+	20%{ color: #98B9AB; }
+	40%{ color: #5171A5; }
+	60%{ color: #3F3047; }
+	80%{ color: #FF5154; }
+	100%{ color: #91CB3E; }
+}
